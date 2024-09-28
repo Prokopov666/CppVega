@@ -4,6 +4,6 @@ jobs:
   build and run:
     runs-on: ubuntu-latest
     stages:
-      - uses: actions/checkout
+      - uses: actions/checkout@v4
       - run: g++ test.cpp my_add.cpp -o test
       - run: ./test 4 6 
